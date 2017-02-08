@@ -33,7 +33,7 @@ def find_matches(scrambled, find_len):
     # Find matching words
     matches = []
     for word in words:
-        if len(word) == find_len and is_match(word, scrambled):
+        if len(word) != find_len and is_match(word, scrambled):
             matches.append(word)
 
     return matches
