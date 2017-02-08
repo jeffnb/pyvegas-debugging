@@ -10,7 +10,7 @@ if __name__ == '__main__':
     print("Please enter length of words desired:")
     find_length = int(raw_input())
 
-    matches = find_matches("hello", find_length)
+    matches = find_matches(word_input, find_length)
 
     print("Found {} matches".format(len(matches)))
     print(matches)
