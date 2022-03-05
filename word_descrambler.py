@@ -1,7 +1,7 @@
 import re
 
 
-def is_match(word, scrambled):
+def is_match(word: str, scrambled: str) -> bool:
     """
     Simply takes the word and determines if its letters are part of scrambled
     :param word: word to try to match
@@ -24,7 +24,7 @@ def find_matches(scrambled, find_len):
     :param find_len: the length of word to find
     :return: list of matches
     """
-    with open('/usr/share/dict/words') as word_file:
+    with open('words') as word_file:
         words = word_file.readlines()
 
     # Strip all surrounding whitespace
